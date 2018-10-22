@@ -103,7 +103,7 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
         {
             ActivatePowerUp(-1);
 			//ThrowingController.INSTANCE.PUpSelectionMode(false);
-			GameManager.instance.PUpSelectionMode (false);
+			//GameManager.instance.PUpSelectionMode (false);
 			return;
         }
         RaycastHit hit;
@@ -154,13 +154,17 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
                 }
                 break;
             case -1:
-                if (ArrowStormOptions.Length != 1) //fix thissssssssssssssss its stupid af
-                    //ThrowingController.INSTANCE.PUpSelectionMode(false);
-				GameManager.instance.PUpSelectionMode (false);
+                if (ArrowStormOptions.Length != 1)
+                { //fix thissssssssssssssss its stupid af
+                  //ThrowingController.INSTANCE.PUpSelectionMode(false);
+                    GameManager.instance.PUpSelectionMode(false);
+                    print("test1");
+                }
                 else//fix thissssssssssssssss its stupid af
                     GameObject.Find("PowerUpAux").SetActive(false);
                 foreach (GameObject j in ArrowStormOptions)
                     j.SetActive(false);
+                print("test2");
                 break;
             case 2:
                 if (mana >= manaValue * 3)

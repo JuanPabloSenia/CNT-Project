@@ -15,8 +15,9 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 		}
 	}
 
+    public static GraphicRaycaster interactable;
 
-	AudioSource[] screamSounds;
+    AudioSource[] screamSounds;
 	Queue<AudioSource> screamQueue = new Queue<AudioSource> ();
 
 	public static bool isShooting;
@@ -54,7 +55,7 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 	public int amountPoolTrash;
 
 	[Header ("OTHERS")]
-	public GraphicRaycaster interactable;
+	//public GraphicRaycaster interactable;
 	public CameraScript scriptCameraScript;
 
 	public static int axeCount;
@@ -69,7 +70,8 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 		arrayTrash = new GameObject[amountPoolTrash];
 		leftShootPos = GameObject.Find ("LeftShootPos");
 		rightShootPos = GameObject.Find ("RightShootPos");
-	}
+        interactable = GetComponent<GraphicRaycaster>();
+    }
 
 	void Start () {
 		createPool (pool_weapon[Random.Range(0, pool_weapon.Length)], arrayWeapon, amountPoolWeapon);
@@ -233,6 +235,7 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 		for (int i = 0; i < amountPool; i++) {
 			GameObject obj = Instantiate (objectPool) as GameObject;
 			obj.SetActive (false);
+            obj.name = "weaponPool" + i.ToString();
 			arrayPool[i] = obj;
 		}
 	}
@@ -240,6 +243,7 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 	public void activatePool (GameObject[] arrayPool, Vector3 _position, Quaternion _rotation, bool isLeft) {
 		for (int i = 0; i < arrayPool.Length; i++) {
 			if (!arrayPool[i].activeInHierarchy) {
+                print("LLAMAR: " + i.ToString());
 				arrayPool[i].SetActive (true);
 				Weapon w = arrayPool[i].GetComponent<Weapon> ();
 				arrayPool[i].transform.position = _position;

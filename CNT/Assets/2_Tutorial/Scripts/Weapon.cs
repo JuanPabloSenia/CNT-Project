@@ -44,11 +44,11 @@ public class Weapon : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision other) {
-		if (other.gameObject.tag == "Environment") {
+		if (other.gameObject.tag == "Environment" && canDealDmg) {
 			if (canDealDmg && tag != "Trash") {
 				Debug.Log ("ComboReset");
 				ComboTextLogic.combo = 0;
-				//MobSpawning.mobSp.ComboSplashText (transform.position, false); //TRUE Combo, FLASE Miss
+				MobSpawning.mobSp.ComboSplashText (transform.position, false); //TRUE Combo, FLASE Miss
 			}
 			canDealDmg = false;
 			Invoke ("autoDestroy", timerDestroy);

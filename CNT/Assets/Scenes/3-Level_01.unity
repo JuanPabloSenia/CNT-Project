@@ -36713,7 +36713,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 19.900024, y: -27.157837}
+  m_AnchoredPosition: {x: 19.899902, y: -27.157837}
   m_SizeDelta: {x: 63.71, y: 34.55}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1426965240
@@ -43302,16 +43302,17 @@ MonoBehaviour:
   finalScore: {fileID: 570908026}
   HPBar: {fileID: 2130201052}
   pool_weapon:
-  - {fileID: 1101156069310348, guid: aadea8586c0499d4ca4843d6aaecdd53, type: 2}
+  - {fileID: 1408641756491308, guid: ae7da3a563f643a4f929eb8488212f76, type: 2}
+  - {fileID: 1273150832068234, guid: c2d51bb85010b064890e8236a3904fb1, type: 2}
+  - {fileID: 1581123920618880, guid: 93dfc93d2b2383b49bbc117bcbc5e5b3, type: 2}
   arrayWeapon: []
-  amountPoolWeapon: 10
+  amountPoolWeapon: 30
   pool_trash:
   - {fileID: 1057031240940798, guid: 72e75ce62b0e7d34c9925aef6d264efd, type: 2}
   - {fileID: 1266450716708808, guid: 623b93b0ab5da694f9c07367ee73d796, type: 2}
   - {fileID: 1574236732170634, guid: 189983a94c068634c9b1c94bf8050aae, type: 2}
   arrayTrash: []
-  amountPoolTrash: 10
-  interactable: {fileID: 1902148000}
+  amountPoolTrash: 30
   scriptCameraScript: {fileID: 1614397942}
 --- !u!1 &1922342798
 GameObject:

@@ -97,18 +97,14 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
 
     public virtual void OnPointerDown(PointerEventData ped)
     {
-        dragStart = ThrowingController.RelativePedPosition(ped.position);
-        if (activePowerUp == powerUp.SELECTING)
+        //dragStart = ThrowingController.RelativePedPosition(ped.position);
+		dragStart = GameManager.RelativePedPosition (ped.position);
+		if (activePowerUp == powerUp.SELECTING)
         {
             ActivatePowerUp(-1);
-<<<<<<< HEAD
 			//ThrowingController.INSTANCE.PUpSelectionMode(false);
 			GameManager.instance.PUpSelectionMode (false);
 			return;
-=======
-            ThrowingController.INSTANCE.PUpSelectionMode(false);
-            return;
->>>>>>> parent of 69b92f4... Tareas aplicadas (REVISAR)
         }
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(ped.position);
@@ -160,12 +156,16 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
             case -1:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d4b2c82... Revert "Tareas aplicadas (REVISAR)"
                 if (ArrowStormOptions.Length != 1)
                 { //fix thissssssssssssssss its stupid af
                   //ThrowingController.INSTANCE.PUpSelectionMode(false);
                     GameManager.instance.PUpSelectionMode(false);
                     print("test1");
                 }
+<<<<<<< HEAD
 =======
                 if (ArrowStormOptions.Length != 1) //fix thissssssssssssssss its stupid af
                     ThrowingController.INSTANCE.PUpSelectionMode(false);
@@ -175,6 +175,8 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
                     //ThrowingController.INSTANCE.PUpSelectionMode(false);
 				GameManager.instance.PUpSelectionMode (false);
 >>>>>>> parent of ede14df... CNIA HOUSE
+=======
+>>>>>>> parent of d4b2c82... Revert "Tareas aplicadas (REVISAR)"
                 else//fix thissssssssssssssss its stupid af
                     GameObject.Find("PowerUpAux").SetActive(false);
                 foreach (GameObject j in ArrowStormOptions)
@@ -184,11 +186,14 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
                 if (mana >= manaValue * 3)
                 {
                     PUPButtons.SetActive(false);
-                    ThrowingController.INSTANCE.PUpSelectionMode(false);
-                    ActualizeMana(-manaValue * 3);
-                    ThrowingController.currentHealth += 50;
-                    ThrowingController.INSTANCE.ActualizeHealth();
-                }
+                    //ThrowingController.INSTANCE.PUpSelectionMode(false);
+					GameManager.instance.PUpSelectionMode (false);
+					ActualizeMana (-manaValue * 3);
+					//ThrowingController.currentHealth += 50;
+					//ThrowingController.INSTANCE.ActualizeHealth();
+					GameManager.currentHealth += 50;
+					GameManager.instance.ActualizeHealth ();
+				}
                 break;
             case -100:
                 BackBtn.SetActive(false);
@@ -202,8 +207,9 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
 
     public void CancelPowerUp()
     {
-        ThrowingController.INSTANCE.PUpSelectionMode(false);
-    }
+		//ThrowingController.INSTANCE.PUpSelectionMode(false);
+		GameManager.instance.PUpSelectionMode (false);
+	}
     
     IEnumerator ArrowStormCoroutine()
     {

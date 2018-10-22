@@ -103,7 +103,7 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
             ActivatePowerUp(-1);
 <<<<<<< HEAD
 			//ThrowingController.INSTANCE.PUpSelectionMode(false);
-			//GameManager.instance.PUpSelectionMode (false);
+			GameManager.instance.PUpSelectionMode (false);
 			return;
 =======
             ThrowingController.INSTANCE.PUpSelectionMode(false);
@@ -159,6 +159,7 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
                 break;
             case -1:
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (ArrowStormOptions.Length != 1)
                 { //fix thissssssssssssssss its stupid af
                   //ThrowingController.INSTANCE.PUpSelectionMode(false);
@@ -169,11 +170,15 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
                 if (ArrowStormOptions.Length != 1) //fix thissssssssssssssss its stupid af
                     ThrowingController.INSTANCE.PUpSelectionMode(false);
 >>>>>>> parent of 69b92f4... Tareas aplicadas (REVISAR)
+=======
+                if (ArrowStormOptions.Length != 1) //fix thissssssssssssssss its stupid af
+                    //ThrowingController.INSTANCE.PUpSelectionMode(false);
+				GameManager.instance.PUpSelectionMode (false);
+>>>>>>> parent of ede14df... CNIA HOUSE
                 else//fix thissssssssssssssss its stupid af
                     GameObject.Find("PowerUpAux").SetActive(false);
                 foreach (GameObject j in ArrowStormOptions)
                     j.SetActive(false);
-                print("test2");
                 break;
             case 2:
                 if (mana >= manaValue * 3)

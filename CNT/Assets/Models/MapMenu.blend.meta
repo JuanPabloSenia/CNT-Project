@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 7fc959c48f6f3074fa0b3a70cef6e641
+timeCreated: 1534352307
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Alfombra
+    100002: Barriles
+    100004: Cimitarra001
+    100006: Escoba
+    100008: Espada
+    100010: Estante1
+    100012: Estante2
+    100014: Ladrillos
+    100016: Madera
+    100018: //RootNode
+    100020: Martillo
+    100022: Mesa
+    100024: Object009
+    100026: Pierdas
+    100028: Silla
+    100030: Suelo
+    400000: Alfombra
+    400002: Barriles
+    400004: Cimitarra001
+    400006: Escoba
+    400008: Espada
+    400010: Estante1
+    400012: Estante2
+    400014: Ladrillos
+    400016: Madera
+    400018: //RootNode
+    400020: Martillo
+    400022: Mesa
+    400024: Object009
+    400026: Pierdas
+    400028: Silla
+    400030: Suelo
+    2100000: 08_-_Default
+    2100002: Material__36
+    2100004: 03_-_Default_001
+    2100006: 01_-_Default
+    2100008: Material__0
+    2100010: 03_-_Default
+    2100012: 02_-_Default
+    2100014: Material__436
+    2100016: Material__436_001
+    2100018: Material__441
+    2100020: Material__25
+    2100022: Material__0__Map__5
+    2100024: 02_-_Default__Map__5
+    2100026: 03_-_Default__Map__5
+    2300000: Alfombra
+    2300002: Barriles
+    2300004: Cimitarra001
+    2300006: Escoba
+    2300008: Espada
+    2300010: Estante1
+    2300012: Estante2
+    2300014: Ladrillos
+    2300016: Madera
+    2300018: Martillo
+    2300020: Mesa
+    2300022: Object009
+    2300024: Pierdas
+    2300026: Silla
+    2300028: Suelo
+    3300000: Alfombra
+    3300002: Barriles
+    3300004: Cimitarra001
+    3300006: Escoba
+    3300008: Espada
+    3300010: Estante1
+    3300012: Estante2
+    3300014: Ladrillos
+    3300016: Madera
+    3300018: Martillo
+    3300020: Mesa
+    3300022: Object009
+    3300024: Pierdas
+    3300026: Silla
+    3300028: Suelo
+    4300000: Object009
+    4300002: Barriles
+    4300004: Ladrillos
+    4300006: Pierdas
+    4300008: Madera
+    4300010: Espada
+    4300012: Cimitarra001
+    4300014: Estante2
+    4300016: Alfombra
+    4300018: Mesa
+    4300020: Estante1
+    4300022: Martillo
+    4300024: Escoba
+    4300026: Silla
+    4300028: Suelo
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

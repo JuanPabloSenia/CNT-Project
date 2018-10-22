@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 592fbcef4381d0741935bb34f605e069
+timeCreated: 1503100459
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: HamletOrNot
+  fontNames:
+  - HamletOrNot
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -50,7 +50,7 @@ public class MobSpawning : MonoBehaviour {
     public GameObject GolemGO;
 
     void Start() {
-        //Debug.Log(DATA.instance.selectedCharacter);
+        Debug.Log(DATA.instance.selectedCharacter);
         wave = 0;
         if (mobSp == null)
             mobSp = this;
@@ -109,7 +109,7 @@ public class MobSpawning : MonoBehaviour {
     IEnumerator SpawnEnemy()
     {
 
-        //Debug.Log("TriedToSpawn-Rem:" + enemiesRem);
+        Debug.Log("TriedToSpawn-Rem:" + enemiesRem);
         if (enemiesRem <= 0)
         {
             enemiesRem = 0;

@@ -21,8 +21,7 @@ public class MenuPause : MonoBehaviour {
 
 	public void MainMenu () {
 		Time.timeScale = 1;
-		//ThrowingController.isGameOver = false;
-		GameManager.instance.isGameOver = false;
+		ThrowingController.isGameOver = false;
 		anim_ScreenFade.SetTrigger ("GoToMenu");
 		StartCoroutine (goToMenu ());
 	}

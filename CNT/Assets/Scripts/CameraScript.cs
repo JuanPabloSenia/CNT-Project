@@ -56,7 +56,8 @@ public class CameraScript : MonoBehaviour {
 
         if (Physics.Raycast(ray, out hit))
         {
-				if (hit.collider.name == "Forja" && GameManager.axeCount < 20) {
+            if (hit.collider.name == "Forja" && GameManager.axeCount < 20)
+            {
                 if (DATA.instance.level == 2) GameObject.Find("Cartel_Recargar").GetComponent<Animator>().SetInteger("AxesLeft", GameManager.axeCount);
                 AudioSource aud = smithQueue.Dequeue();
                 aud.Play();

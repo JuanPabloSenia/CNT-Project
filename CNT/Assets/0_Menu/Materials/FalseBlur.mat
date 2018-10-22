@@ -103,7 +103,11 @@ Material:
     - _UseUIAlphaClip: 0
     - _ZWrite: 0
     m_Colors:
+<<<<<<< HEAD
     - _Color: {r: 1, g: 1, b: 1, a: 0.98480195}
+=======
+    - _Color: {r: 1, g: 1, b: 1, a: 0.9836349}
+>>>>>>> parent of 69b92f4... Tareas aplicadas (REVISAR)
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

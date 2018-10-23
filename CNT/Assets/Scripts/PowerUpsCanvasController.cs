@@ -103,7 +103,7 @@ public class PowerUpsCanvasController : MonoBehaviour, IPointerDownHandler, IDra
         {
             ActivatePowerUp(-1);
 			//ThrowingController.INSTANCE.PUpSelectionMode(false);
-			GameManager.instance.PUpSelectionMode (false);
+			//GameManager.instance.PUpSelectionMode (false);
 			return;
         }
         RaycastHit hit;

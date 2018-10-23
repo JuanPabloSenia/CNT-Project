@@ -15,8 +15,10 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 		}
 	}
 
+    public static GraphicRaycaster interactable;
 
-	AudioSource[] screamSounds;
+
+    AudioSource[] screamSounds;
 	Queue<AudioSource> screamQueue = new Queue<AudioSource> ();
 
 	public static bool isShooting;
@@ -34,6 +36,7 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 	public Text finalScore;
 
 	bool smithing;
+
 
 	//-----------------------------------------------------------
 
@@ -54,7 +57,6 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 	public int amountPoolTrash;
 
 	[Header ("OTHERS")]
-	public GraphicRaycaster interactable;
 	public CameraScript scriptCameraScript;
 
 	public static int axeCount;
@@ -69,7 +71,8 @@ public class GameManager : MonoBehaviour, IDragHandler, IPointerDownHandler, IPo
 		arrayTrash = new GameObject[amountPoolTrash];
 		leftShootPos = GameObject.Find ("LeftShootPos");
 		rightShootPos = GameObject.Find ("RightShootPos");
-	}
+        interactable = GetComponent<GraphicRaycaster>();
+    }
 
 	void Start () {
 		createPool (pool_weapon[Random.Range(0, pool_weapon.Length)], arrayWeapon, amountPoolWeapon);

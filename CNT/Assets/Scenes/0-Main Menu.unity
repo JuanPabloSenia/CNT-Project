@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3440,8 +3440,9 @@ MonoBehaviour:
   btnBookContactUs: {fileID: 705444230}
   btnPlayLevel: {fileID: 1674130187}
   toggleGroupCharacters: {fileID: 973067033}
-  canvas_Menu: {fileID: 1472513150}
+  canvas_Menu: {fileID: 1472513154}
   canvas_CharacterSelection: {fileID: 1780678049}
+  _activateFade: {fileID: 1180376101}
   txtVersion: {fileID: 747895153}
 --- !u!320 &973067031
 PlayableDirector:

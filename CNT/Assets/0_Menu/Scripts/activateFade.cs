@@ -35,7 +35,8 @@ public class activateFade : MonoBehaviour {
 	IEnumerator startFadeOff () {
 		while (isFading) {
 			matFalseBlur.color = Color.Lerp (new Color (1, 1, 1, matFalseBlur.color.a), Color.clear, 4f * Time.deltaTime);
-		}
+            yield return new WaitForSeconds(0.01f);
+        }
 		StopCoroutine (startFadeOff ());
 		yield return null;
 	}

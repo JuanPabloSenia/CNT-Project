@@ -19,10 +19,11 @@ public class MenuManager : MonoBehaviour {
 	public ToggleGroup toggleGroupCharacters;
 
 	[Header ("GameObjects")]
-	public GameObject canvas_Menu;
+	public Canvas canvas_Menu;
 	public GameObject canvas_CharacterSelection;
 
-	[Header ("Others")]
+    [Header("Others")]
+    public activateFade _activateFade;
 	public Text txtVersion;
 
 	string link;
@@ -82,7 +83,7 @@ public class MenuManager : MonoBehaviour {
 		DATA.instance.level = _level;
 		btnBookPlay.SetActive (false);
 		btnBack.SetActive (false);
-		canvas_Menu.SetActive (false);
+        canvas_Menu.enabled = false;
 		canvas_CharacterSelection.SetActive (true);
 	}
 
@@ -102,16 +103,18 @@ public class MenuManager : MonoBehaviour {
 				DATA.instance.selectedCharacter = DATA.Characters.BLACKSMITH;
 				break;
 		}
-		canvas_Menu.SetActive (true);
-		canvas_CharacterSelection.SetActive (false);
+        canvas_Menu.enabled = true;
+        canvas_CharacterSelection.SetActive (false);
 		anim_MainMenu.SetBool ("PlayLevel", true);
-		StartCoroutine (goToLevel ());
+        StartCoroutine (goToLevel ());
 	}
 
 	//Nos lleva a la pantalla de carga
 	IEnumerator goToLevel () {
-		yield return new WaitForSeconds (2);
-		anim_ScreenFade.SetTrigger ("GoToMenu");
+        yield return new WaitForSeconds(1);
+        _activateFade.fadeOff();
+        yield return new WaitForSeconds (1);
+        anim_ScreenFade.SetTrigger ("GoToMenu");
 		yield return new WaitForSeconds (1);
 		SceneManager.LoadScene (1); 
 	}

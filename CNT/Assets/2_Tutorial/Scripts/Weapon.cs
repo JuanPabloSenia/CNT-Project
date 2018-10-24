@@ -44,7 +44,7 @@ public class Weapon : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision other) {
-		if (other.gameObject.tag == "Environment") {
+		if (other.gameObject.tag == "Environment" && canDealDmg) {
 			if (canDealDmg && tag != "Trash") {
 				Debug.Log ("ComboReset");
 				ComboTextLogic.combo = 0;
